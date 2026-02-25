@@ -1,0 +1,500 @@
+dashboard_title: JIRA Dashboard (Prod)
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: a1864988-49e4-4daa-84c3-f0ec623afa36
+position:
+  CHART-0cUfBmHXBOLZCLOu3LZa6:
+    children: []
+    id: CHART-0cUfBmHXBOLZCLOu3LZa6
+    meta:
+      chartId: 7996
+      height: 81
+      sliceName: Project efficiency trend (Prod)
+      uuid: a54230da-aa8a-454d-beee-11749c06064f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-velAZf7k7jKvyNHsnR66j
+    type: CHART
+  CHART-2o-0rYL_RoOq0SOzH3m8-:
+    children: []
+    id: CHART-2o-0rYL_RoOq0SOzH3m8-
+    meta:
+      chartId: 7995
+      height: 76
+      sliceName: time in status (Prod)
+      uuid: d5a8dbfa-1b5b-4d4c-8632-e8f530599307
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ya5cQEz4UP1CxTX2Zw47q
+    type: CHART
+  CHART-8l5bZ2HDNzXYI28EwxkN2:
+    children: []
+    id: CHART-8l5bZ2HDNzXYI28EwxkN2
+    meta:
+      chartId: 7999
+      height: 81
+      sliceName: Project Velocity & Predictability (Prod)
+      uuid: be287d0d-d045-47c1-a8a3-095b6d38d152
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-velAZf7k7jKvyNHsnR66j
+    type: CHART
+  CHART-DIDzLrV3BJiu-KEDtZH8_:
+    children: []
+    id: CHART-DIDzLrV3BJiu-KEDtZH8_
+    meta:
+      chartId: 7994
+      height: 66
+      sliceName: Sprints Report (Prod)
+      uuid: 5f53c419-e591-47bb-ab97-1c2dd0685c0e
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW--guV2hwiCw1QfpdvtC6P0
+    type: CHART
+  CHART-YH3VyhvG7dpiX02jStC8Q:
+    children: []
+    id: CHART-YH3VyhvG7dpiX02jStC8Q
+    meta:
+      chartId: 7997
+      height: 82
+      sliceName: Project Correctness & Performance (Prod)
+      uuid: 86b491d6-2b85-438d-a171-939288e2033e
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-WeI1P8fp3umPHcOyh6Sp3
+    type: CHART
+  CHART-x2Ei48GyECRV5k688Z5C3:
+    children: []
+    id: CHART-x2Ei48GyECRV5k688Z5C3
+    meta:
+      chartId: 7998
+      height: 82
+      sliceName: Project Correctness per Pulse (Prod)
+      uuid: 90d4e21d-5b3c-4e11-ae72-c8eba2543b69
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-WeI1P8fp3umPHcOyh6Sp3
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  DIVIDER-MVSA3yELm2ar1mOzaeddv:
+    children: []
+    id: DIVIDER-MVSA3yELm2ar1mOzaeddv
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  DIVIDER-eWAVafu0ZIMmtRlzZ5blI:
+    children: []
+    id: DIVIDER-eWAVafu0ZIMmtRlzZ5blI
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: DIVIDER
+  GRID_ID:
+    children:
+    - ROW-J9GCKkqlB6fQ5g-xtQc_H
+    - ROW-WeI1P8fp3umPHcOyh6Sp3
+    - DIVIDER-MVSA3yELm2ar1mOzaeddv
+    - ROW-mOMCCuYJj3vAnpCyHvzPc
+    - ROW-velAZf7k7jKvyNHsnR66j
+    - DIVIDER-eWAVafu0ZIMmtRlzZ5blI
+    - ROW-ya5cQEz4UP1CxTX2Zw47q
+    - ROW--guV2hwiCw1QfpdvtC6P0
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: JIRA Dashboard (Prod)
+    type: HEADER
+  MARKDOWN-fSarXiDXok9RxGmdFX7z_:
+    children: []
+    id: MARKDOWN-fSarXiDXok9RxGmdFX7z_
+    meta:
+      code: "Show how many Story Points (SP) or work items (one dashboard for each)\
+        \ were committed and actually delivered for each pulse. Implement via stacked\
+        \ charts to differentiate between Features and Bugs. \nSuch a report will\
+        \ allow you to see the trends in achieving the pulse goal and areas where\
+        \ the team spends more effort (bugs vs features).\n"
+      height: 19
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-mOMCCuYJj3vAnpCyHvzPc
+    type: MARKDOWN
+  MARKDOWN-lIJk0T-2dJ4kSbLO8vtQT:
+    children: []
+    id: MARKDOWN-lIJk0T-2dJ4kSbLO8vtQT
+    meta:
+      code: 'The current data representation displays the ratio of #User Stories delivered
+        in Pulse N over Bugs opened in Pulse N, and a Trending Average line of #User
+        Stories/#Bugs_Open that demonstrates the team''s dynamic. This metric is particularly
+        crucial in the long-term success of our product, especially as it scales and
+        expands. It''s essential to maintain a high level of quality and efficiency
+        even as technical debt accrues, which can lead to an influx of bugs and a
+        decrease in overall efficiency. This information is especially relevant in
+        the current competitive environment, as we strive to ensure that our product
+        remains competitive and delivers value to our users while adhering the highest
+        standards.'
+      height: 19
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-mOMCCuYJj3vAnpCyHvzPc
+    type: MARKDOWN
+  MARKDOWN-r4bhQqTOMTPyt-Vabg09y:
+    children: []
+    id: MARKDOWN-r4bhQqTOMTPyt-Vabg09y
+    meta:
+      code: Show number of newly opened bugs vs closed bugs. Identify spots when software
+        quality drops and bug fixing should be prioritised.
+      height: 12
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-J9GCKkqlB6fQ5g-xtQc_H
+    type: MARKDOWN
+  MARKDOWN-tjfVj1_DuW3m0Vz1AsbJ7:
+    children: []
+    id: MARKDOWN-tjfVj1_DuW3m0Vz1AsbJ7
+    meta:
+      code: We need to investigate trends in how many bugs we have in backlog overtime
+        and how many of them are resolved.
+      height: 12
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-J9GCKkqlB6fQ5g-xtQc_H
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW--guV2hwiCw1QfpdvtC6P0:
+    children:
+    - CHART-DIDzLrV3BJiu-KEDtZH8_
+    id: ROW--guV2hwiCw1QfpdvtC6P0
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-J9GCKkqlB6fQ5g-xtQc_H:
+    children:
+    - MARKDOWN-r4bhQqTOMTPyt-Vabg09y
+    - MARKDOWN-tjfVj1_DuW3m0Vz1AsbJ7
+    id: ROW-J9GCKkqlB6fQ5g-xtQc_H
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-WeI1P8fp3umPHcOyh6Sp3:
+    children:
+    - CHART-x2Ei48GyECRV5k688Z5C3
+    - CHART-YH3VyhvG7dpiX02jStC8Q
+    id: ROW-WeI1P8fp3umPHcOyh6Sp3
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-mOMCCuYJj3vAnpCyHvzPc:
+    children:
+    - MARKDOWN-fSarXiDXok9RxGmdFX7z_
+    - MARKDOWN-lIJk0T-2dJ4kSbLO8vtQT
+    id: ROW-mOMCCuYJj3vAnpCyHvzPc
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-velAZf7k7jKvyNHsnR66j:
+    children:
+    - CHART-8l5bZ2HDNzXYI28EwxkN2
+    - CHART-0cUfBmHXBOLZCLOu3LZa6
+    id: ROW-velAZf7k7jKvyNHsnR66j
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ya5cQEz4UP1CxTX2Zw47q:
+    children:
+    - CHART-2o-0rYL_RoOq0SOzH3m8-
+    id: ROW-ya5cQEz4UP1CxTX2Zw47q
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '7994':
+      id: 7994
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7995
+        - 7996
+        - 7997
+        - 7998
+        - 7999
+    '7995':
+      id: 7995
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7994
+        - 7996
+        - 7997
+        - 7998
+        - 7999
+    '7996':
+      id: 7996
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7994
+        - 7995
+        - 7997
+        - 7998
+        - 7999
+    '7997':
+      id: 7997
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7994
+        - 7995
+        - 7996
+        - 7998
+        - 7999
+    '7998':
+      id: 7998
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7994
+        - 7995
+        - 7996
+        - 7997
+        - 7999
+    '7999':
+      id: 7999
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 7994
+        - 7995
+        - 7996
+        - 7997
+        - 7998
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 7994
+    - 7995
+    - 7996
+    - 7997
+    - 7998
+    - 7999
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  native_filter_configuration:
+  - id: NATIVE_FILTER-iNF8VBgtFy5jg9cKLIOam
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Project
+    filterType: filter_select
+    targets:
+    - column:
+        name: project
+      datasetUuid: 24bd6804-ae3e-4493-98cc-6c8703a18ad2
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+  - id: NATIVE_FILTER-PRIvhtALwtkYADrmfx9Si
+    controlValues:
+      sortAscending: false
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: false
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Pulse Name
+    filterType: filter_select
+    targets:
+    - column:
+        name: sprint_name
+      datasetUuid: c0e88253-6087-4fff-8a44-deccfe75a523
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds:
+    - NATIVE_FILTER-iNF8VBgtFy5jg9cKLIOam
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    type: NATIVE_FILTER
+    description: ''
+  default_filters: '{}'
+  shared_label_colors: []
+  map_label_colors:
+    opened, Medium: '#1FA8C9'
+    opened, Highest: '#454E7C'
+    opened, High: '#5AC189'
+    closed, Medium: '#FF7F44'
+    closed, Highest: '#666666'
+    closed, High: '#E04355'
+    P1/2: '#1FA8C9'
+    P3: '#454E7C'
+    committed, Task: '#1FA8C9'
+    committed, Story: '#454E7C'
+    delivered, Task: '#5AC189'
+    delivered, Story: '#FF7F44'
+    committed, Bug: '#666666'
+    delivered, Bug: '#E04355'
+    committed, Spike: '#FCC700'
+    delivered, Spike: '#A868B7'
+    Delivered stories: '#1FA8C9'
+    Opened bugs: '#454E7C'
+    story_to_bug_ratio: '#5AC189'
+    In Progress: '#1FA8C9'
+    Untriaged: '#454E7C'
+    In Review: '#5AC189'
+    Triaged: '#FF7F44'
+    Backlog: '#FCC700'
+    Kernel Complete: '#666666'
+    BLOCKED: '#666666'
+    To Be Deployed: '#E04355'
+    To Do: '#A38F79'
+    Current Pulse: '#A868B7'
+    Selected For Development: '#3CCCCB'
+    Waiting On Customer: '#8FD3E4'
+    Build: '#A1A6BD'
+    Kernel Not Ready: '#ACE1C4'
+    In Backlog: '#D1C6BC'
+    Kernel Promotion: '#FEC0A1'
+    Kernel Notice: '#B2B2B2'
+    Kernel Testing Failed: '#EFA1AA'
+    Cert Team Action: '#FDE380'
+    Kernel Ready: '#D3B3DA'
+    Team review/ Need more info: '#9EE5E5'
+    MAAS troubleshooting: '#A1A6BD'
+    3-DCE Troubleshooting: '#ACE1C4'
+    Blocked: '#EFA1AA'
+    Kernel Testing: '#FEC0A1'
+    Scheduled: '#B2B2B2'
+    Won't Fix: '#454E7C'
+    New requests: '#9EE5E5'
+    1-Order Pending: '#FDE380'
+    administration: '#D3B3DA'
+    Selected for Development: '#A868B7'
+    In Design: '#5AC189'
+    To Be Groomed: '#D1C6BC'
+    SRE Configuration: '#FF7F44'
+    Live: '#E04355'
+    Needs Order: '#FCC700'
+    Duplicate: '#3CCCCB'
+    Kernel Preparing: '#A38F79'
+    SRE troubleshooting: '#8FD3E4'
+    Kernel Building: '#FCC700'
+    Delivered: '#A868B7'
+    Current Sprint: '#3CCCCB'
+    2-DCE Configuration: '#A38F79'
+    Idea: '#8FD3E4'
+    Kernel Peer Review: '#A1A6BD'
+    Pending Delivery: '#ACE1C4'
+    IS Escalations: '#FEC0A1'
+    Archive: '#B2B2B2'
+    Needs review: '#EFA1AA'
+    Kernel Early Testing: '#FDE380'
+    DCE - TOR5 Work: '#D3B3DA'
+    Pending/Block: '#9EE5E5'
+    DCE Troubleshooting: '#D1C6BC'
+    To be delivered: '#454E7C'
+    AWAITING INPUT: '#5AC189'
+    Team review: '#FF7F44'
+    Delivered, to be picked up: '#666666'
+    Done - Success: '#E04355'
+    Marketing Ready: '#E04355'
+    Kernel Notice Complete: '#FCC700'
+    DROP: '#A868B7'
+    Merged: '#3CCCCB'
+    DATA ISSUES/REQUESTS: '#A38F79'
+    0-Delivered, to be picked up: '#8FD3E4'
+    Evergreen: '#A1A6BD'
+    Done - Fail: '#ACE1C4'
+    DCE Configuration: '#FEC0A1'
+    Kernel Blocked: '#B2B2B2'
+    Pending Publication: '#EFA1AA'
+    Parked: '#FDE380'
+    Inactive: '#D3B3DA'
+    Sharing: '#9EE5E5'
+    Handed Over: '#D1C6BC'
+    Published: '#454E7C'
+    Doing: '#5AC189'
+    QA/Review: '#FF7F44'
+    To do: '#666666'
+    Investigating: '#A1A6BD'
+    REVIEW: '#B2B2B2'
+    Wishlist: '#666666'
+  color_scheme_domain: []
+theme_uuid: null
+version: 1.0.0
+tags: []

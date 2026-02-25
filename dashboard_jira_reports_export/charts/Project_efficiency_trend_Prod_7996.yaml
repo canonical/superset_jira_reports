@@ -1,0 +1,110 @@
+slice_name: Project efficiency trend (Prod)
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 3675__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 7957
+  x_axis: sprint_name
+  metrics:
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: story_to_bug_ratio
+    optionName: metric_z3kjizfm8ld_ex7w0deo36w
+    sqlExpression: 'COUNT(DISTINCT CASE WHEN metric_type = ''delivered_story'' THEN
+      issue_id END) * 1.0
+
+      /
+
+      NULLIF(COUNT(DISTINCT CASE WHEN metric_type = ''opened_bug'' THEN issue_id END),
+      0)
+
+      '
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Delivered stories
+    optionName: metric_6wze0zc3ki_k018fl58wsh
+    sqlExpression: 'COUNT(DISTINCT CASE WHEN metric_type = ''delivered_story'' THEN
+      issue_id END)
+
+      '
+  - aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: true
+    label: Opened bugs
+    optionName: metric_jx0oewe0wj_avy35t8ucth
+    sqlExpression: COUNT(DISTINCT CASE WHEN metric_type = 'opened_bug' THEN issue_id
+      END)
+  groupby: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: started_at
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: name
+  sort_series_ascending: true
+  color_scheme: supersetColors
+  time_shift_color: true
+  only_total: true
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":3675,"type":"table"},"force":false,"queries":[{"filters":[{"col":"started_at","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"sprint_name","label":"sprint_name","expressionType":"SQL"}],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"story_to_bug_ratio","optionName":"metric_z3kjizfm8ld_ex7w0deo36w","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''delivered_story'' THEN issue_id END) * 1.0\n/\nNULLIF(COUNT(DISTINCT
+  CASE WHEN metric_type = ''opened_bug'' THEN issue_id END), 0)\n"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Delivered
+  stories","optionName":"metric_6wze0zc3ki_k018fl58wsh","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''delivered_story'' THEN issue_id END)\n"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Opened
+  bugs","optionName":"metric_jx0oewe0wj_avy35t8ucth","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''opened_bug'' THEN issue_id END)"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"story_to_bug_ratio","optionName":"metric_z3kjizfm8ld_ex7w0deo36w","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''delivered_story'' THEN issue_id END) * 1.0\n/\nNULLIF(COUNT(DISTINCT
+  CASE WHEN metric_type = ''opened_bug'' THEN issue_id END), 0)\n"},false]],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["sprint_name"],"columns":[],"aggregates":{"story_to_bug_ratio":{"operator":"mean"},"Delivered
+  stories":{"operator":"mean"},"Opened bugs":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"flatten"}]}],"form_data":{"datasource":"3675__table","viz_type":"echarts_timeseries_bar","slice_id":7957,"x_axis":"sprint_name","metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"story_to_bug_ratio","optionName":"metric_z3kjizfm8ld_ex7w0deo36w","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''delivered_story'' THEN issue_id END) * 1.0\n/\nNULLIF(COUNT(DISTINCT
+  CASE WHEN metric_type = ''opened_bug'' THEN issue_id END), 0)\n"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Delivered
+  stories","optionName":"metric_6wze0zc3ki_k018fl58wsh","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''delivered_story'' THEN issue_id END)\n"},{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":true,"label":"Opened
+  bugs","optionName":"metric_jx0oewe0wj_avy35t8ucth","sqlExpression":"COUNT(DISTINCT
+  CASE WHEN metric_type = ''opened_bug'' THEN issue_id END)"}],"groupby":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"started_at"}],"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"name","sort_series_ascending":true,"color_scheme":"supersetColors","time_shift_color":true,"only_total":true,"zoomable":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: a54230da-aa8a-454d-beee-11749c06064f
+version: 1.0.0
+dataset_uuid: c0e88253-6087-4fff-8a44-deccfe75a523
+tags:
+- Jira

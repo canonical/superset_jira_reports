@@ -1,0 +1,83 @@
+slice_name: Project Velocity & Predictability (Prod)
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 3678__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 7955
+  x_axis: sprint_name
+  x_axis_sort_asc: true
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      changed_on: '2025-09-11T16:55:10.381390'
+      column_name: issue_url
+      created_on: '2025-09-11T16:55:10.381386'
+      description: null
+      expression: null
+      extra: '{}'
+      filterable: true
+      groupby: true
+      id: 34827
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: column
+      type_generic: 1
+      uuid: b0e34eb7-5095-4580-9574-6c24a6bbbe3f
+      verbose_name: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT(issue_url)
+    optionName: metric_s9bm5i1sgln_w98l8d4mt8l
+    sqlExpression: null
+  groupby:
+  - status
+  - issue_type
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  time_shift_color: true
+  stack: Stack
+  only_total: true
+  stackDimension: status
+  zoomable: true
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipSortByMetric: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards: []
+query_context: '{"datasource":{"id":3678,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"sprint_name","label":"sprint_name","expressionType":"SQL"},"status","issue_type"],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"changed_on":"2025-09-11T16:55:10.381390","column_name":"issue_url","created_on":"2025-09-11T16:55:10.381386","description":null,"expression":null,"extra":"{}","filterable":true,"groupby":true,"id":34827,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":1,"uuid":"b0e34eb7-5095-4580-9574-6c24a6bbbe3f","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(issue_url)","optionName":"metric_s9bm5i1sgln_w98l8d4mt8l","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT","column":{"advanced_data_type":null,"changed_on":"2025-09-11T16:55:10.381390","column_name":"issue_url","created_on":"2025-09-11T16:55:10.381386","description":null,"expression":null,"extra":"{}","filterable":true,"groupby":true,"id":34827,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":1,"uuid":"b0e34eb7-5095-4580-9574-6c24a6bbbe3f","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(issue_url)","optionName":"metric_s9bm5i1sgln_w98l8d4mt8l","sqlExpression":null},false]],"annotation_layers":[],"row_limit":1000,"series_columns":["status","issue_type"],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["sprint_name"],"columns":["status","issue_type"],"aggregates":{"COUNT(issue_url)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"COUNT(issue_url)":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"3678__table","viz_type":"echarts_timeseries_bar","slice_id":7955,"x_axis":"sprint_name","x_axis_sort_asc":true,"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"changed_on":"2025-09-11T16:55:10.381390","column_name":"issue_url","created_on":"2025-09-11T16:55:10.381386","description":null,"expression":null,"extra":"{}","filterable":true,"groupby":true,"id":34827,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"column","type_generic":1,"uuid":"b0e34eb7-5095-4580-9574-6c24a6bbbe3f","verbose_name":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(issue_url)","optionName":"metric_s9bm5i1sgln_w98l8d4mt8l","sqlExpression":null}],"groupby":["status","issue_type"],"adhoc_filters":[],"order_desc":true,"row_limit":1000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","time_shift_color":true,"stack":"Stack","only_total":true,"stackDimension":"status","zoomable":true,"show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"tooltipSortByMetric":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: be287d0d-d045-47c1-a8a3-095b6d38d152
+version: 1.0.0
+dataset_uuid: dc505904-d65b-4b5a-8e21-7cb9868e80da
+tags:
+- Jira

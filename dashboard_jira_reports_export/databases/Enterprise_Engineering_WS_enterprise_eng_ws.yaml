@@ -1,0 +1,15 @@
+database_name: Enterprise Engineering WS (enterprise_eng_ws)
+sqlalchemy_uri: trino://trino.test.com/enterprise_eng_ws
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: true
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  allows_virtual_table_explore: true
+  cost_estimate_enabled: true
+impersonate_user: true
+uuid: 0fc629e5-dd2b-4025-96c5-eb6adc85bb9d
+version: 1.0.0
